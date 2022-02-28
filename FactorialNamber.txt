@@ -1,0 +1,36 @@
+package Setters.cp;
+import java.util.Scanner;
+public class Factorial {
+
+	public static void main(String[] args) {
+		// program on factorial number
+	Scanner dev=new Scanner(System.in);
+		 
+		 int number;
+		 int factorial=1;
+		 System.out.println("Enter number those will find factorial");
+		 number=dev.nextInt();
+		for(int i=1; i<=number;i=i+1)
+		{
+		 factorial=factorial*i;
+		}
+		System.out.println("factorial of number"+" " +factorial);
+		}
+}	
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		
+	
+
+
