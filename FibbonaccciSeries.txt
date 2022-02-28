@@ -1,0 +1,23 @@
+package Setters.cp;
+import java.util.Scanner;
+public class FibbonacciSeries {
+
+	public static void main(String[] args) {
+		// fibbonacci series
+		int a=0, b=1;
+		int n;
+		Scanner dev=new Scanner(System.in);
+		System.out.println("Enter number upto n");
+		n=dev.nextInt();
+		
+		System.out.println( a+" "+b);
+		int c;
+		for(int i=1;i<=n;i++) {
+			c=a+b;
+			System.out.print(" "+c);
+			a=b;
+			b=c;
+		}
+	}
+
+}
