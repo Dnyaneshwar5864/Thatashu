@@ -1,0 +1,24 @@
+package Setters.cp;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// Reverse string of program
+		String name="Dnyaneshwar";
+		int leng=name.length();
+		String reverse="";
+		for(int i=name.length()-1;i>=0;i--)
+		{
+			reverse=reverse+name.charAt(i);
+		}
+//equal method is reterns boolean value
+	if(name.equals(reverse)) {
+		System.out.println("String is palindrome");
+	}
+	else
+	{
+		System.out.println(" not a palindrome");
+	}
+	}
+
+}
