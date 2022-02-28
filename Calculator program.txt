@@ -1,0 +1,46 @@
+package Setters.cp;
+import java .util.Scanner;
+public class Calculatar {
+
+	public static void main(String[] args) {
+		// calculator progaram
+		char operator;
+		Double number1,number2,result;
+		//use object of Scanner class
+		Scanner dev=new Scanner(System.in);
+		//Ask to user for enter operator 
+		System.out.println("Choose an operator:+,-,*,/");
+		operator=dev.next().charAt(0);
+		//Ask to user to inter input
+		System.out.println("Enter a value of 1st user");
+		number1=dev.nextDouble();
+		System.out.println("Enter a value of 2nd user");
+		number2=dev.nextDouble();
+switch(operator) {
+//addition here
+case '+':
+	result=number1+number2;
+	System.out.println(number1+"+"+number2+"="+result);
+	break;
+	//substraction  here
+	case '-':
+		result=number1-number2;
+		System.out.println(number1+"-"+number2+"="+result);
+		break;
+		//multifiaction here
+	case '*':
+		result=number1*number2;
+		System.out.println(number1+"*"+number2+"="+result);
+		break;
+		//division here
+	case '/':
+		result=number1/number2;
+		System.out.println(number1+"/"+number2+"="+result);
+		break;
+		default:
+			System.out.println("invalid operator");
+}
+dev.close();
+	}
+
+}
